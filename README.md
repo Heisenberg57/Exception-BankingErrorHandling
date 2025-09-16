@@ -44,9 +44,14 @@ javac BankAccount.java
 
 java BankAccount
 
+Expected out:
+
 Deposited 500.0. Current balance = 500.0
+
 Withdrew 200.0. Current balance = 300.0
+
 Error: Insufficient funds! Tried to withdraw 400.0, but balance = 300.0
+
 Final Balance = 300.0
 
 
