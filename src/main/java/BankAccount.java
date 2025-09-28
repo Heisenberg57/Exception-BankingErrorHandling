@@ -9,9 +9,9 @@ public class BankAccount {
     private String accountNumber;
     private double balance;
 
-    public BankAccount(String accountNumber){
+    public BankAccount(String accountNumber, double balance){
         this.accountNumber=accountNumber;
-        this.balance=0.0;
+        this.balance=balance;
     }
 
     public void deposit(double amount){
@@ -43,7 +43,7 @@ public class BankAccount {
     }
 
     public static void main(String[] args) {
-        BankAccount account = new BankAccount("12345");
+        BankAccount account = new BankAccount("12345",800);
         try{
             account.deposit(500);
             account.withdraw(200);
